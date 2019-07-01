@@ -1,6 +1,7 @@
 docker build -t syellanki7/multi-client:latest -t syellanki7/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t syellanki7/multi-server:latest -t syellanki7/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t syellanki7/multi-worker:latest -t syellanki7/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t syellanki7/multi-worker:latest -t syellanki7/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push syellanki7/multi-client:latest
 docker push syellanki7/multi-server:latest
